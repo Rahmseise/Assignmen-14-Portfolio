@@ -10,7 +10,7 @@ function Skills() {
         <div className="skill-category">
           <h3>Languages & Frameworks</h3>
           <ul>
-            <li>JavaScript (ES6+)</li>
+            <li>JavaScript</li>
             <li>React.js</li>
             <li>Node.js</li>
             <li>HTML5 & CSS</li>

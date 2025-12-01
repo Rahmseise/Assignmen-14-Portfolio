@@ -14,7 +14,7 @@ const projects = [
     id: 2,
     title: "Rudimentary CMS Website",
     description: "Full-stack CMS website with interactable blog post and account management.",
-    image: "/images/cms.png",
+    image: "/images/component-library.png",
     link: "https://github.com/Rahmseise/Final-Project-CMS",
     techList: ["PHP", "HTML", "MySql"]
   },
@@ -22,7 +22,7 @@ const projects = [
     id: 3,
     title: "First Docker Trial",
     description: "Created a react app and tested docker functionality",
-    image: "/images/docker.png",
+    image: "/images/component-library.png",
     link: "https://github.com/Rahmseise/Dockerized-React-File",
     techList: ["React", "Eslint", "Docker"]
   }

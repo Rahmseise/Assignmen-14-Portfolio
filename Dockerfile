@@ -8,12 +8,12 @@ WORKDIR /app
 COPY package*.json ./
 
 # Install dependencies
-RUN npm ci --only=production
+RUN npm ci
 
 # Copy all project files
 COPY . .
 
-# Build the production version
+# Build the production version (creates dist folder)
 RUN npm run build
 
 # Production stage
@@ -23,7 +23,7 @@ FROM nginx:alpine
 WORKDIR /misa_jan_final_site
 
 # Copy built files from build stage to nginx
-COPY --from=build /app/build /misa_jan_final_site
+COPY --from=build /app/dist /misa_jan_final_site
 
 # Copy custom nginx configuration
 COPY nginx.conf /etc/nginx/conf.d/default.conf
